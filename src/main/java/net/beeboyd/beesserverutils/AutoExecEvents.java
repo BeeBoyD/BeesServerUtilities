@@ -1,4 +1,4 @@
-package net.beeboyd.beeserverutilities;
+package net.beeboyd.beesserverutils;
 
 import net.minecraft.server.MinecraftServer;
 import net.minecraftforge.event.TickEvent;
@@ -10,7 +10,7 @@ import net.minecraftforge.fml.common.Mod;
 
 import java.util.concurrent.ConcurrentHashMap;
 
-@Mod.EventBusSubscriber(modid = BeeServerUtilites.MOD_ID)
+@Mod.EventBusSubscriber(modid = BeesServerUtilites.MOD_ID)
 public class AutoExecEvents {
 
     private static long serverTickCounter = 0;

@@ -1,4 +1,4 @@
-package net.beeboyd.beeserverutilities;
+package net.beeboyd.beesserverutils;
 
 public enum AutoExecScheduleType {
     ON_PLAYER_JOIN,

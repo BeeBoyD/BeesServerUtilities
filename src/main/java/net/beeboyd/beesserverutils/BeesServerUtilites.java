@@ -1,4 +1,4 @@
-package net.beeboyd.beeserverutilities;
+package net.beeboyd.beesserverutils;
 
 import com.mojang.logging.LogUtils;
 import net.minecraftforge.common.MinecraftForge;
@@ -9,12 +9,12 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
-@Mod(BeeServerUtilites.MOD_ID)
-public class BeeServerUtilites {
-    public static final String MOD_ID = "beeserverutilities";
+@Mod(BeesServerUtilites.MOD_ID)
+public class BeesServerUtilites {
+    public static final String MOD_ID = "beesserverutils";
     private static final Logger LOGGER = LogUtils.getLogger();
 
-    public BeeServerUtilites() {
+    public BeesServerUtilites() {
         // Register the common setup method
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::commonSetup);
         // Register our mod events with the Forge event bus
