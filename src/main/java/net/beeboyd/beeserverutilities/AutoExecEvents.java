@@ -14,7 +14,7 @@ import java.util.concurrent.ConcurrentHashMap;
 public class AutoExecEvents {
 
     private static long serverTickCounter = 0;
-    // Keeps track of the next tick for each ON_TIME_INTERVAL rule.
+    // Map to track the next tick for each ON_TIME_INTERVAL rule.
     private static final ConcurrentHashMap<AutoExecManager.AutoExecRule, Long> nextExecutionMap = new ConcurrentHashMap<>();
 
     @SubscribeEvent

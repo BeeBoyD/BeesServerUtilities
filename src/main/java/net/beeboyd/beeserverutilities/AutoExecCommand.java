@@ -47,15 +47,14 @@ public class AutoExecCommand {
             } catch (IllegalArgumentException e) {
                 return builder.buildFuture();
             }
-            // If player events, suggest online player names.
+            // For player-related events, suggest online player names.
             if (scheduleType == AutoExecScheduleType.ON_PLAYER_JOIN || scheduleType == AutoExecScheduleType.ON_PLAYER_LEAVE) {
-                // Wrap the collection into an ArrayList to ensure it's a List.
                 List<String> players = new ArrayList<>(context.getSource().getOnlinePlayerNames());
                 for (String player : players) {
                     builder.suggest(player);
                 }
             }
-            // If time interval, suggest common intervals.
+            // For time interval events, suggest common intervals.
             else if (scheduleType == AutoExecScheduleType.ON_TIME_INTERVAL) {
                 String[] intervals = {"600", "1200", "2400"};
                 for (String s : intervals) {
@@ -64,11 +63,11 @@ public class AutoExecCommand {
             }
             return builder.buildFuture();
         };
-    }
+    };
 
     // Suggestion provider for command argument.
     private static final SuggestionProvider<CommandSourceStack> COMMAND_SUGGESTIONS = (context, builder) -> {
-        // This is a basic fixed list; you can extend it as needed.
+        // Basic fixed list of common commands.
         String[] commonCommands = {"/say", "/give", "/tp", "/kick", "/ban"};
         for (String cmd : commonCommands) {
             builder.suggest(cmd);
@@ -82,7 +81,7 @@ public class AutoExecCommand {
                 .requires(source -> source.hasPermission(2))
                 .then(Commands.literal("add")
                     .then(Commands.argument("name", StringArgumentType.word())
-                        // No suggestions for "name"—it’s free-form.
+                        // "name" is free-form (no suggestions).
                         .then(Commands.argument("scheduleType", StringArgumentType.word())
                             .suggests(SCHEDULE_TYPE_SUGGESTIONS)
                             .then(Commands.argument("target", StringArgumentType.string())
@@ -153,7 +152,7 @@ public class AutoExecCommand {
                 return Command.SINGLE_SUCCESS;
             }
         }
-        // Ensure command starts with a slash.
+        // Ensure the command starts with a slash.
         if (!command.startsWith("/")) {
             command = "/" + command;
         }
