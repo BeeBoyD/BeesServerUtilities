@@ -1,4 +1,4 @@
-package net.beeboyd.beeserverutilities;
+package net.beeboyd.beesserverutils;
 
 import net.minecraft.server.MinecraftServer;
 import net.minecraftforge.event.TickEvent;

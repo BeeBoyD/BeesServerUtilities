@@ -1,4 +1,4 @@
-package net.beeboyd.beeserverutilities;
+package net.beeboyd.beesserverutils;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
@@ -34,7 +34,7 @@ public class AutoExecManager {
     private static final List<AutoExecRule> RULES = new ArrayList<>();
     private static final Gson gson = new Gson();
     // Config file path.
-    private static final Path CONFIG_PATH = Path.of("config", "beeserverutilities", "autoexec_rules.json");
+    private static final Path CONFIG_PATH = Path.of("config", "beesserverutils", "autoexec_rules.json");
 
     public static void addRule(String name, AutoExecScheduleType scheduleType, String target, String command) {
         RULES.add(new AutoExecRule(name, scheduleType, target, command));
