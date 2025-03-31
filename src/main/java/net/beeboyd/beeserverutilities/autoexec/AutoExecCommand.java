@@ -1,10 +1,12 @@
-package net.beeboyd.beesserverutils;
+package net.beeboyd.beeserverutilities.autoexec;
 
 import com.mojang.brigadier.Command;
 import com.mojang.brigadier.CommandDispatcher;
 import com.mojang.brigadier.arguments.StringArgumentType;
+import com.mojang.brigadier.suggestion.SuggestionsBuilder;
 import com.mojang.brigadier.context.CommandContext;
 import com.mojang.brigadier.suggestion.SuggestionProvider;
+import net.beeboyd.beeserverutilities.BeeServerUtilites;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.Commands;
 import net.minecraft.network.chat.Component;
@@ -12,6 +14,7 @@ import net.minecraft.network.chat.Component;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
+import java.util.concurrent.CompletableFuture;
 import java.util.stream.Collectors;
 
 public class AutoExecCommand {
@@ -24,7 +27,7 @@ public class AutoExecCommand {
         return builder.buildFuture();
     };
 
-    // Suggestion provider for autoexec names when removing.
+    // Suggestion provider for autoexec names.
     private static final SuggestionProvider<CommandSourceStack> AUTOEXEC_NAME_SUGGESTIONS = (context, builder) -> {
         List<String> names = AutoExecManager.getRules().stream()
                 .map(rule -> rule.name)
@@ -45,15 +48,16 @@ public class AutoExecCommand {
             } catch (IllegalArgumentException e) {
                 return builder.buildFuture();
             }
-            // If player events, suggest online player names.
-            if (scheduleType == AutoExecScheduleType.ON_PLAYER_JOIN || scheduleType == AutoExecScheduleType.ON_PLAYER_LEAVE) {
-                // Wrap the collection into an ArrayList to ensure it's a List.
+            // For player-related events, suggest online player names.
+            if (scheduleType == AutoExecScheduleType.ON_PLAYER_JOIN ||
+                scheduleType == AutoExecScheduleType.ON_PLAYER_LEAVE ||
+                scheduleType == AutoExecScheduleType.ON_PLAYER_DEATH) {
                 List<String> players = new ArrayList<>(context.getSource().getOnlinePlayerNames());
                 for (String player : players) {
                     builder.suggest(player);
                 }
             }
-            // If time interval, suggest common intervals.
+            // For time intervals, suggest common intervals.
             else if (scheduleType == AutoExecScheduleType.ON_TIME_INTERVAL) {
                 String[] intervals = {"600", "1200", "2400"};
                 for (String s : intervals) {
@@ -62,11 +66,10 @@ public class AutoExecCommand {
             }
             return builder.buildFuture();
         };
-    }
+    };
 
     // Suggestion provider for command argument.
     private static final SuggestionProvider<CommandSourceStack> COMMAND_SUGGESTIONS = (context, builder) -> {
-        // This is a basic fixed list; you can extend it as needed.
         String[] commonCommands = {"/say", "/give", "/tp", "/kick", "/ban"};
         for (String cmd : commonCommands) {
             builder.suggest(cmd);
@@ -77,10 +80,10 @@ public class AutoExecCommand {
     public static void register(CommandDispatcher<CommandSourceStack> dispatcher) {
         dispatcher.register(
             Commands.literal("autoexec")
-                .requires(source -> source.hasPermission(2))
+                .requires(source -> source.hasPermission(4))
+                // /autoexec add <name> <scheduleType> <target> <command>
                 .then(Commands.literal("add")
                     .then(Commands.argument("name", StringArgumentType.word())
-                        // No suggestions for "name"—it’s free-form.
                         .then(Commands.argument("scheduleType", StringArgumentType.word())
                             .suggests(SCHEDULE_TYPE_SUGGESTIONS)
                             .then(Commands.argument("target", StringArgumentType.string())
@@ -96,6 +99,7 @@ public class AutoExecCommand {
                         )
                     )
                 )
+                // /autoexec remove <name> <scheduleType> <target> <command>
                 .then(Commands.literal("remove")
                     .then(Commands.argument("name", StringArgumentType.word())
                         .suggests(AUTOEXEC_NAME_SUGGESTIONS)
@@ -113,6 +117,14 @@ public class AutoExecCommand {
                             )
                         )
                     )
+                )
+                // /autoexec reload – dynamically reload the configuration
+                .then(Commands.literal("reload")
+                    .executes(context -> executeReload(context))
+                )
+                // /autoexec list – list all current autoexec rules
+                .then(Commands.literal("list")
+                    .executes(context -> executeList(context))
                 )
         );
     }
@@ -143,7 +155,7 @@ public class AutoExecCommand {
             try {
                 long interval = Long.parseLong(target);
                 if (interval <= 0) {
-                    context.getSource().sendFailure(Component.literal("Time interval must be a positive number."));
+                    context.getSource().sendFailure(Component.literal("Time interval must be positive."));
                     return Command.SINGLE_SUCCESS;
                 }
             } catch (NumberFormatException e) {
@@ -151,15 +163,12 @@ public class AutoExecCommand {
                 return Command.SINGLE_SUCCESS;
             }
         }
-        // Ensure command starts with a slash.
         if (!command.startsWith("/")) {
             command = "/" + command;
         }
         AutoExecManager.addRule(name, scheduleType, target, command);
-        context.getSource().sendSuccess(
-            Component.literal("Added autoexec rule [" + name + "]: " + scheduleType + " " + target + " -> " + command),
-            true
-        );
+        context.getSource().sendSuccess(Component.literal("Added autoexec rule [" + name + "]: " + scheduleType + " " + target + " -> " + command), true);
+        BeeServerUtilites.LOGGER.info("Added autoexec rule [{}]: {} {} -> {}", name, scheduleType, target, command);
         return Command.SINGLE_SUCCESS;
     }
 
@@ -178,15 +187,35 @@ public class AutoExecCommand {
         }
         boolean removed = AutoExecManager.removeRule(name, scheduleType, target, command);
         if (removed) {
-            context.getSource().sendSuccess(
-                Component.literal("Removed autoexec rule [" + name + "]."),
-                true
-            );
+            context.getSource().sendSuccess(Component.literal("Removed autoexec rule [" + name + "]."), true);
+            BeeServerUtilites.LOGGER.info("Removed autoexec rule [{}].", name);
         } else {
-            context.getSource().sendFailure(
-                Component.literal("No matching rule found to remove.")
-            );
+            context.getSource().sendFailure(Component.literal("No matching rule found to remove."));
+            BeeServerUtilites.LOGGER.warn("Failed to remove autoexec rule [{}]: rule not found.", name);
         }
+        return Command.SINGLE_SUCCESS;
+    }
+
+    private static int executeReload(CommandContext<CommandSourceStack> context) {
+        AutoExecManager.loadRules();
+        context.getSource().sendSuccess(Component.literal("Reloaded autoexec configuration."), true);
+        BeeServerUtilites.LOGGER.info("Reloaded autoexec configuration.");
+        return Command.SINGLE_SUCCESS;
+    }
+
+    private static int executeList(CommandContext<CommandSourceStack> context) {
+        StringBuilder list = new StringBuilder("Autoexec Rules:\n");
+        for (AutoExecManager.AutoExecRule rule : AutoExecManager.getRules()) {
+            list.append(rule.name)
+                .append(" - ")
+                .append(rule.scheduleType)
+                .append(" ")
+                .append(rule.target)
+                .append(" -> ")
+                .append(rule.command)
+                .append("\n");
+        }
+        context.getSource().sendSuccess(Component.literal(list.toString()), false);
         return Command.SINGLE_SUCCESS;
     }
 
@@ -194,7 +223,7 @@ public class AutoExecCommand {
         try {
             return AutoExecScheduleType.valueOf(input.toUpperCase(Locale.ROOT));
         } catch (IllegalArgumentException e) {
-            source.sendFailure(Component.literal("Invalid schedule type. Use one of: ON_PLAYER_JOIN, ON_PLAYER_LEAVE, ON_SERVER_STARTUP, ON_SERVER_SHUTDOWN, ON_TIME_INTERVAL"));
+            source.sendFailure(Component.literal("Invalid schedule type. Use one of: " + java.util.Arrays.toString(AutoExecScheduleType.values())));
             return null;
         }
     }

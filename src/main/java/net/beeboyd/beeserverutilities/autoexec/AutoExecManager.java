@@ -1,7 +1,8 @@
-package net.beeboyd.beesserverutils;
+package net.beeboyd.beeserverutilities.autoexec;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+import net.beeboyd.beeserverutilities.BeeServerUtilites;
 
 import java.io.*;
 import java.lang.reflect.Type;
@@ -12,11 +13,10 @@ import java.util.List;
 
 public class AutoExecManager {
 
-    // Data container for an autoexec rule.
     public static class AutoExecRule {
-        public String name; // Unique identifier for the autoexec rule.
+        public String name; // Unique identifier.
         public AutoExecScheduleType scheduleType;
-        public String target;  // Could be a player name or time interval.
+        public String target;  // A player name or time interval.
         public String command; // The command to execute.
 
         public AutoExecRule(String name, AutoExecScheduleType scheduleType, String target, String command) {
@@ -26,15 +26,14 @@ public class AutoExecManager {
             this.command = command;
         }
 
-        // No-arg constructor needed for Gson.
         public AutoExecRule() {
         }
     }
 
     private static final List<AutoExecRule> RULES = new ArrayList<>();
     private static final Gson gson = new Gson();
-    // Config file path.
-    private static final Path CONFIG_PATH = Path.of("config", "beesserverutils", "autoexec_rules.json");
+    // Save rules in config/beeserverutilities/autoexec/autoexec_rules.json
+    private static final Path CONFIG_PATH = Path.of("config", "beeserverutilities", "autoexec", "autoexec_rules.json");
 
     public static void addRule(String name, AutoExecScheduleType scheduleType, String target, String command) {
         RULES.add(new AutoExecRule(name, scheduleType, target, command));
@@ -62,7 +61,7 @@ public class AutoExecManager {
         try {
             if (!Files.exists(CONFIG_PATH)) {
                 Files.createDirectories(CONFIG_PATH.getParent());
-                saveRules(); // Saves empty list.
+                saveRules();
                 return;
             }
             try (Reader reader = Files.newBufferedReader(CONFIG_PATH)) {
@@ -74,6 +73,7 @@ public class AutoExecManager {
                 }
             }
         } catch (IOException e) {
+            BeeServerUtilites.LOGGER.error("Error loading autoexec rules: {}", e.getMessage());
             e.printStackTrace();
         }
     }
@@ -87,6 +87,7 @@ public class AutoExecManager {
                 gson.toJson(RULES, writer);
             }
         } catch (IOException e) {
+            BeeServerUtilites.LOGGER.error("Error saving autoexec rules: {}", e.getMessage());
             e.printStackTrace();
         }
     }

@@ -1,6 +1,8 @@
-package net.beeboyd.beesserverutils;
+package net.beeboyd.beeserverutilities;
 
 import com.mojang.logging.LogUtils;
+import net.beeboyd.beeserverutilities.autoexec.AutoExecCommand;
+import net.beeboyd.beeserverutilities.autoexec.AutoExecManager;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegisterCommandsEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -11,8 +13,8 @@ import org.slf4j.Logger;
 
 @Mod(BeeServerUtilites.MOD_ID)
 public class BeeServerUtilites {
-    public static final String MOD_ID = "beesserverutils";
-    private static final Logger LOGGER = LogUtils.getLogger();
+    public static final String MOD_ID = "beeserverutilities";
+    public static final Logger LOGGER = LogUtils.getLogger();
 
     public BeeServerUtilites() {
         // Register the setup method for mod loading
