@@ -3,6 +3,7 @@ package net.beeboyd.beeserverutilities;
 import com.mojang.logging.LogUtils;
 import net.beeboyd.beeserverutilities.autoexec.AutoExecCommand;
 import net.beeboyd.beeserverutilities.autoexec.AutoExecManager;
+import net.beeboyd.beeserverutilities.deathmessage.DeathMessageCommand;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegisterCommandsEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -33,5 +34,7 @@ public class BeeServerUtilites {
     @SubscribeEvent
     public void onRegisterCommands(RegisterCommandsEvent event) {
         AutoExecCommand.register(event.getDispatcher());
+        DeathMessageCommand.register(event.getDispatcher());
+
     }
 }
