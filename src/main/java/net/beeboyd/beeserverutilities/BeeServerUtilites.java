@@ -4,7 +4,9 @@ import com.mojang.logging.LogUtils;
 import net.beeboyd.beeserverutilities.autoexec.AutoExecCommand;
 import net.beeboyd.beeserverutilities.autoexec.AutoExecManager;
 import net.beeboyd.beeserverutilities.deathmessage.DeathMessageCommand;
-import net.beeboyd.beeserverutilities.serverutils.ServerStatsCommand;
+import net.beeboyd.beeserverutilities.serverlogger.ServerLogger;
+import net.beeboyd.beeserverutilities.serverlogger.ServerLoggerConfig;
+import net.beeboyd.beeserverutilities.serverstats.ServerStatsCommand;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegisterCommandsEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -25,6 +27,7 @@ public class BeeServerUtilites {
         MinecraftForge.EVENT_BUS.register(this);
         // Load persisted autoexec rules from file
         AutoExecManager.loadRules();
+        ServerLoggerConfig.reload();
 
     }
 
@@ -37,6 +40,7 @@ public class BeeServerUtilites {
         AutoExecCommand.register(event.getDispatcher());
         DeathMessageCommand.register(event.getDispatcher());
         ServerStatsCommand.register(event.getDispatcher());
+        ServerLogger.register(event.getDispatcher());
 
     }
 }

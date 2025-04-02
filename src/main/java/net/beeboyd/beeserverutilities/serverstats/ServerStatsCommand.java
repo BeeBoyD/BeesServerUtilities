@@ -1,4 +1,4 @@
-package net.beeboyd.beeserverutilities.serverutils;
+package net.beeboyd.beeserverutilities.serverstats;
 
 import com.mojang.brigadier.Command;
 import com.mojang.brigadier.CommandDispatcher;
