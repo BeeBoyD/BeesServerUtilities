@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/BeesServerUtilities.main.iml" filepath="$PROJECT_DIR$/.idea/modules/BeesServerUtilities.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/BeesServerUtilities.test.iml" filepath="$PROJECT_DIR$/.idea/modules/BeesServerUtilities.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MC Mods.BeesServerUtilities.main.iml" filepath="$PROJECT_DIR$/.idea/modules/MC Mods.BeesServerUtilities.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MC Mods.BeesServerUtilities.test.iml" filepath="$PROJECT_DIR$/.idea/modules/MC Mods.BeesServerUtilities.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/net.beeboyd.beeserverutilities.BeesServerUtilities.main.iml" filepath="$PROJECT_DIR$/.idea/modules/net.beeboyd.beeserverutilities.BeesServerUtilities.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/net.beeboyd.beeserverutilities.BeesServerUtilities.test.iml" filepath="$PROJECT_DIR$/.idea/modules/net.beeboyd.beeserverutilities.BeesServerUtilities.test.iml" />
     </modules>
