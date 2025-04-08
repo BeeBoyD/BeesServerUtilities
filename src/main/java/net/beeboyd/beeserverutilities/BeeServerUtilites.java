@@ -5,6 +5,7 @@ import net.beeboyd.beeserverutilities.autoexec.AutoExecCommand;
 import net.beeboyd.beeserverutilities.autoexec.AutoExecManager;
 import net.beeboyd.beeserverutilities.deathmessage.DeathMessageCommand;
 import net.beeboyd.beeserverutilities.serverlogger.ServerLogger;
+import net.beeboyd.beeserverutilities.serverlogger.ServerLoggerBlockCommand;
 import net.beeboyd.beeserverutilities.serverlogger.ServerLoggerConfig;
 import net.beeboyd.beeserverutilities.serverstats.ServerInfoCommand;
 import net.beeboyd.beeserverutilities.serverstats.ServerStatsCommand;
@@ -43,5 +44,6 @@ public class BeeServerUtilites {
         ServerStatsCommand.register(event.getDispatcher());
         ServerLogger.register(event.getDispatcher());
         ServerInfoCommand.register(event.getDispatcher());
+        ServerLoggerBlockCommand.register(event.getDispatcher());
     }
 }

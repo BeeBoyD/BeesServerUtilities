@@ -21,7 +21,7 @@ public class ServerLogger {
 
     static {
         // Create logs folder if it doesn't exist
-        File logDir = new File("logs");
+        File logDir = new File("logs/beeserverutilities");
         if (!logDir.exists()) {
             logDir.mkdirs();
         }

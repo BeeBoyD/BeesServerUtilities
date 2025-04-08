@@ -9,6 +9,8 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class ServerLoggerConfig {
     private static final File CONFIG_FILE = new File("config/beeserverutilities/serverlogger/serverlogger_config.json");
@@ -50,6 +52,12 @@ public class ServerLoggerConfig {
     public boolean logLavaBucket        = true;
     public boolean logCropHarvest       = true;
     public boolean logTrade             = true;
+
+    // New: Player entered block event settings
+    public boolean logPlayerEnteredBlock = true;
+    public boolean excludeAdminsFromBlockTrigger = true;
+    public long blockEnterCooldown = 10000;
+    public List<EnteredBlockTrigger> enteredBlockTriggers = new ArrayList<>();
 
     public static ServerLoggerConfig get() {
         return instance;
@@ -126,6 +134,7 @@ public class ServerLoggerConfig {
             case "lava_bucket":        return logLavaBucket;
             case "crop_harvest":       return logCropHarvest;
             case "trade":              return logTrade;
+            case "entered_block":      return logPlayerEnteredBlock;
             default:                   return false;
         }
     }
