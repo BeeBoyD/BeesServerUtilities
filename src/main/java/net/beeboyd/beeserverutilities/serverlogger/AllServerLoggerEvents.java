@@ -1,6 +1,6 @@
 package net.beeboyd.beeserverutilities.serverlogger;
 
-import net.beeboyd.beeserverutilities.BeeServerUtilites;
+import net.beeboyd.beeserverutilities.BeeServerUtilities;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.item.ItemStack;
@@ -27,7 +27,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 
 import java.util.Locale;
 
-@Mod.EventBusSubscriber(modid = BeeServerUtilites.MOD_ID)
+@Mod.EventBusSubscriber(modid = BeeServerUtilities.MOD_ID)
 public class AllServerLoggerEvents {
 
     // Player login
@@ -196,7 +196,7 @@ public class AllServerLoggerEvents {
                 ServerLogger.logEvent("block_interaction", player.getScoreboardName(), coords);
             }
         } catch (Exception e) {
-            BeeServerUtilites.LOGGER.error("Error in onBlockInteraction: ", e);
+            BeeServerUtilities.LOGGER.error("Error in onBlockInteraction: ", e);
         }
     }
 

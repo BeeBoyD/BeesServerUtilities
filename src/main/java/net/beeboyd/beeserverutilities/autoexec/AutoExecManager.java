@@ -2,7 +2,7 @@ package net.beeboyd.beeserverutilities.autoexec;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import net.beeboyd.beeserverutilities.BeeServerUtilites;
+import net.beeboyd.beeserverutilities.BeeServerUtilities;
 
 import java.io.*;
 import java.lang.reflect.Type;
@@ -73,7 +73,7 @@ public class AutoExecManager {
                 }
             }
         } catch (IOException e) {
-            BeeServerUtilites.LOGGER.error("Error loading autoexec rules: {}", e.getMessage());
+            BeeServerUtilities.LOGGER.error("Error loading autoexec rules: {}", e.getMessage());
             e.printStackTrace();
         }
     }
@@ -87,7 +87,7 @@ public class AutoExecManager {
                 gson.toJson(RULES, writer);
             }
         } catch (IOException e) {
-            BeeServerUtilites.LOGGER.error("Error saving autoexec rules: {}", e.getMessage());
+            BeeServerUtilities.LOGGER.error("Error saving autoexec rules: {}", e.getMessage());
             e.printStackTrace();
         }
     }

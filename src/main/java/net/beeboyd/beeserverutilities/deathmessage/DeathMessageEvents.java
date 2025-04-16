@@ -1,6 +1,6 @@
 package net.beeboyd.beeserverutilities.deathmessage;
 
-import net.beeboyd.beeserverutilities.BeeServerUtilites;
+import net.beeboyd.beeserverutilities.BeeServerUtilities;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.ClickEvent;
 import net.minecraft.network.chat.Component;
@@ -16,7 +16,7 @@ import net.minecraftforge.fml.common.Mod;
 
 import java.util.stream.Collectors;
 
-@Mod.EventBusSubscriber(modid = BeeServerUtilites.MOD_ID)
+@Mod.EventBusSubscriber(modid = BeeServerUtilities.MOD_ID)
 public class DeathMessageEvents {
 
     @SubscribeEvent
@@ -71,7 +71,7 @@ public class DeathMessageEvents {
             .append(Component.literal(" by " + causeString + ". Items: " + inventoryString));
 
         // Log the message to the server console.
-        BeeServerUtilites.LOGGER.info(finalMessage.getString());
+        BeeServerUtilities.LOGGER.info(finalMessage.getString());
 
         // Send the message to all players with admin permissions.
         for (ServerPlayer admin : server.getPlayerList().getPlayers()) {

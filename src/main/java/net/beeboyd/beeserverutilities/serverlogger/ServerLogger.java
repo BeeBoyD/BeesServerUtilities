@@ -1,6 +1,6 @@
 package net.beeboyd.beeserverutilities.serverlogger;
 
-import net.beeboyd.beeserverutilities.BeeServerUtilites;
+import net.beeboyd.beeserverutilities.BeeServerUtilities;
 import net.minecraft.ChatFormatting;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.Commands;
@@ -31,7 +31,7 @@ public class ServerLogger {
                 LOG_FILE.createNewFile();
             }
         } catch (IOException e) {
-            BeeServerUtilites.LOGGER.error("Failed to create beelogged.log: " + e.getMessage());
+            BeeServerUtilities.LOGGER.error("Failed to create beelogged.log: " + e.getMessage());
         }
     }
 
@@ -50,7 +50,7 @@ public class ServerLogger {
             writer.write(logEntry);
             writer.newLine();
         } catch (IOException e) {
-            BeeServerUtilites.LOGGER.error("Failed to write to beelogged.log: " + e.getMessage());
+            BeeServerUtilities.LOGGER.error("Failed to write to beelogged.log: " + e.getMessage());
         }
     }
 
@@ -61,21 +61,21 @@ public class ServerLogger {
                         .executes(ctx -> {
                             ServerLoggerConfig.setEnabled(true);
                             ctx.getSource().sendSuccess(Component.literal("Server logging enabled.").withStyle(ChatFormatting.GREEN), true);
-                            BeeServerUtilites.LOGGER.info("Server logging enabled.");
+                            BeeServerUtilities.LOGGER.info("Server logging enabled.");
                             return Command.SINGLE_SUCCESS;
                         }))
                 .then(Commands.literal("off")
                         .executes(ctx -> {
                             ServerLoggerConfig.setEnabled(false);
                             ctx.getSource().sendSuccess(Component.literal("Server logging disabled.").withStyle(ChatFormatting.RED), true);
-                            BeeServerUtilites.LOGGER.info("Server logging disabled.");
+                            BeeServerUtilities.LOGGER.info("Server logging disabled.");
                             return Command.SINGLE_SUCCESS;
                         }))
                 .then(Commands.literal("reload")
                         .executes(ctx -> {
                             ServerLoggerConfig.reload();
                             ctx.getSource().sendSuccess(Component.literal("Server logger configuration reloaded."), true);
-                            BeeServerUtilites.LOGGER.info("Server logger configuration reloaded.");
+                            BeeServerUtilities.LOGGER.info("Server logger configuration reloaded.");
                             return Command.SINGLE_SUCCESS;
                         }))
         );

@@ -5,7 +5,7 @@ import com.mojang.brigadier.CommandDispatcher;
 import com.mojang.brigadier.arguments.IntegerArgumentType;
 import com.mojang.brigadier.arguments.StringArgumentType;
 import com.mojang.brigadier.context.CommandContext;
-import net.beeboyd.beeserverutilities.BeeServerUtilites;
+import net.beeboyd.beeserverutilities.BeeServerUtilities;
 import net.minecraft.ChatFormatting;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.Commands;
@@ -50,7 +50,7 @@ public class ServerLoggerBlockCommand {
         ServerLoggerConfig.get().enteredBlockTriggers.add(trigger);
         ServerLoggerConfig.save();
         context.getSource().sendSuccess(Component.literal("Added block trigger: " + trigger.toString()).withStyle(ChatFormatting.GREEN), true);
-        BeeServerUtilites.LOGGER.info("Added block trigger: " + trigger.toString());
+        BeeServerUtilities.LOGGER.info("Added block trigger: " + trigger.toString());
         return Command.SINGLE_SUCCESS;
     }
 
@@ -60,7 +60,7 @@ public class ServerLoggerBlockCommand {
         if (removed) {
             ServerLoggerConfig.save();
             context.getSource().sendSuccess(Component.literal("Removed block trigger(s) with name: " + detailName).withStyle(ChatFormatting.GREEN), true);
-            BeeServerUtilites.LOGGER.info("Removed block trigger(s) with name: " + detailName);
+            BeeServerUtilities.LOGGER.info("Removed block trigger(s) with name: " + detailName);
         } else {
             context.getSource().sendSuccess(Component.literal("No block trigger found with name: " + detailName).withStyle(ChatFormatting.RED), true);
         }

@@ -1,11 +1,10 @@
 package net.beeboyd.beeserverutilities.autoexec;
 
-import net.beeboyd.beeserverutilities.BeeServerUtilites;
+import net.beeboyd.beeserverutilities.BeeServerUtilities;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.event.entity.living.LivingDeathEvent;
-import net.minecraftforge.event.ServerChatEvent;
 import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.event.server.ServerStartedEvent;
 import net.minecraftforge.event.server.ServerStoppingEvent;
@@ -14,7 +13,7 @@ import net.minecraftforge.fml.common.Mod;
 
 import java.util.concurrent.ConcurrentHashMap;
 
-@Mod.EventBusSubscriber(modid = BeeServerUtilites.MOD_ID)
+@Mod.EventBusSubscriber(modid = BeeServerUtilities.MOD_ID)
 public class AutoExecEvents {
 
     private static long serverTickCounter = 0;
@@ -93,7 +92,7 @@ public class AutoExecEvents {
                 try {
                     interval = Long.parseLong(rule.target);
                 } catch (NumberFormatException e) {
-                    BeeServerUtilites.LOGGER.error("Invalid interval in rule [{}]: {}", rule.name, rule.target);
+                    BeeServerUtilities.LOGGER.error("Invalid interval in rule [{}]: {}", rule.name, rule.target);
                     continue;
                 }
                 long nextExecution = nextExecutionMap.getOrDefault(rule, 0L);
@@ -108,14 +107,14 @@ public class AutoExecEvents {
     // (Custom events can be added here as needed.)
 
     private static void runCommand(MinecraftServer server, String command, String triggerInfo) {
-        BeeServerUtilites.LOGGER.info("Executing command [{}] triggered by [{}].", command, triggerInfo);
+        BeeServerUtilities.LOGGER.info("Executing command [{}] triggered by [{}].", command, triggerInfo);
         try {
             server.getCommands().performPrefixedCommand(
                     server.createCommandSourceStack(),
                     command
             );
         } catch (Exception e) {
-            BeeServerUtilites.LOGGER.error("Error executing command [{}] for trigger [{}]: {}", command, triggerInfo, e.getMessage());
+            BeeServerUtilities.LOGGER.error("Error executing command [{}] for trigger [{}]: {}", command, triggerInfo, e.getMessage());
         }
     }
 }

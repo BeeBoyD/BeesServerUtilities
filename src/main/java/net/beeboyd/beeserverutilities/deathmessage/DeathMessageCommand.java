@@ -2,7 +2,7 @@ package net.beeboyd.beeserverutilities.deathmessage;
 
 import com.mojang.brigadier.CommandDispatcher;
 import com.mojang.brigadier.context.CommandContext;
-import net.beeboyd.beeserverutilities.BeeServerUtilites;
+import net.beeboyd.beeserverutilities.BeeServerUtilities;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.Commands;
 import net.minecraft.network.chat.Component;
@@ -29,21 +29,21 @@ public class DeathMessageCommand {
     private static int executeOn(CommandContext<CommandSourceStack> context) {
         DeathMessageConfig.setEnabled(true);
         context.getSource().sendSuccess(Component.literal("Death messages enabled.").withStyle(ChatFormatting.GREEN), true);
-        BeeServerUtilites.LOGGER.info("Death messages enabled.");
+        BeeServerUtilities.LOGGER.info("Death messages enabled.");
         return Command.SINGLE_SUCCESS;
     }
 
     private static int executeOff(CommandContext<CommandSourceStack> context) {
         DeathMessageConfig.setEnabled(false);
         context.getSource().sendSuccess(Component.literal("Death messages disabled.").withStyle(ChatFormatting.RED), true);
-        BeeServerUtilites.LOGGER.info("Death messages disabled.");
+        BeeServerUtilities.LOGGER.info("Death messages disabled.");
         return Command.SINGLE_SUCCESS;
     }
 
     private static int executeReload(CommandContext<CommandSourceStack> context) {
         DeathMessageConfig.reload();
         context.getSource().sendSuccess(Component.literal("Death message config reloaded."), true);
-        BeeServerUtilites.LOGGER.info("Death message config reloaded.");
+        BeeServerUtilities.LOGGER.info("Death message config reloaded.");
         return Command.SINGLE_SUCCESS;
     }
 }

@@ -3,7 +3,7 @@ package net.beeboyd.beeserverutilities.deathmessage;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonSyntaxException;
-import net.beeboyd.beeserverutilities.BeeServerUtilites;
+import net.beeboyd.beeserverutilities.BeeServerUtilities;
 
 import java.io.File;
 import java.io.FileReader;
@@ -31,9 +31,9 @@ public class DeathMessageConfig {
         }
         try (FileReader reader = new FileReader(CONFIG_FILE)) {
             instance = GSON.fromJson(reader, DeathMessageConfig.class);
-            BeeServerUtilites.LOGGER.info("DeathMessageConfig reloaded.");
+            BeeServerUtilities.LOGGER.info("DeathMessageConfig reloaded.");
         } catch (IOException | JsonSyntaxException e) {
-            BeeServerUtilites.LOGGER.error("Error reloading DeathMessageConfig: " + e.getMessage());
+            BeeServerUtilities.LOGGER.error("Error reloading DeathMessageConfig: " + e.getMessage());
         }
     }
 
@@ -48,9 +48,9 @@ public class DeathMessageConfig {
             try (FileWriter writer = new FileWriter(CONFIG_FILE)) {
                 GSON.toJson(instance, writer);
             }
-            BeeServerUtilites.LOGGER.info("DeathMessageConfig saved.");
+            BeeServerUtilities.LOGGER.info("DeathMessageConfig saved.");
         } catch (IOException e) {
-            BeeServerUtilites.LOGGER.error("Error saving DeathMessageConfig: " + e.getMessage());
+            BeeServerUtilities.LOGGER.error("Error saving DeathMessageConfig: " + e.getMessage());
         }
     }
 

@@ -1,301 +1,176 @@
-[07Apr2025 20:04:16.846] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeclientuserdev, --version, MOD_DEV, --assetIndex, 1.19, --assetsDir, C:\Users\dan-c\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 43.5.0, --fml.mcVersion, 1.19.2, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20220805.130853]
-[07Apr2025 20:04:16.858] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.13 by Eclipse Adoptium; OS Windows 10 arch amd64 version 10.0
-[07Apr2025 20:04:17.055] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/dan-c/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23127!/ Service=ModLauncher Env=CLIENT
-[07Apr2025 20:04:17.443] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\dan-c\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.19.2-43.5.0\127dd8c16243efb106d9c85717ca61eb55fbbfa3\javafmllanguage-1.19.2-43.5.0.jar is missing mods.toml file
-[07Apr2025 20:04:17.451] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\dan-c\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.19.2-43.5.0\161b579c6f52a4441b04376763e7aedaf1a097f1\lowcodelanguage-1.19.2-43.5.0.jar is missing mods.toml file
-[07Apr2025 20:04:17.456] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\dan-c\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.19.2-43.5.0\6ca236cd5718398c2ba7abef7cc7f1f6e21dbc38\mclanguage-1.19.2-43.5.0.jar is missing mods.toml file
-[07Apr2025 20:04:17.463] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\dan-c\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.19.2-43.5.0\222e1c483f50a0b8b1397e833049b51445cc7dfb\fmlcore-1.19.2-43.5.0.jar is missing mods.toml file
-[07Apr2025 20:04:17.565] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
-[07Apr2025 20:04:19.090] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeclientuserdev' with arguments [--version, MOD_DEV, --gameDir, ., --assetsDir, C:\Users\dan-c\.gradle\caches\forge_gradle\assets, --assetIndex, 1.19]
-[07Apr2025 20:04:22.954] [pool-3-thread-1/INFO] [net.minecraft.util.datafix.DataFixers/]: Building unoptimized datafixer
-[07Apr2025 20:04:24.590] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResources/]: Assets URL 'union:/C:/Users/dan-c/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.19.2-43.5.0_mapped_parchment_2022.08.14-1.19.2/forge-1.19.2-43.5.0_mapped_parchment_2022.08.14-1.19.2-recomp.jar%23189!/assets/.mcassetsroot' uses unexpected schema
-[07Apr2025 20:04:24.590] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResources/]: Assets URL 'union:/C:/Users/dan-c/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.19.2-43.5.0_mapped_parchment_2022.08.14-1.19.2/forge-1.19.2-43.5.0_mapped_parchment_2022.08.14-1.19.2-recomp.jar%23189!/data/.mcassetsroot' uses unexpected schema
-[07Apr2025 20:04:24.617] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[07Apr2025 20:04:24.623] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
-[07Apr2025 20:04:24.782] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.3.1 build 7
-[07Apr2025 20:04:25.448] [modloading-worker-0/INFO] [net.beeboyd.beeserverutilities.BeeServerUtilites/]: ServerLoggerConfig reloaded.
-[07Apr2025 20:04:25.458] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 43.5.0, for MC 1.19.2 with MCP 20220805.130853
-[07Apr2025 20:04:25.458] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v43.5.0 Initialized
-[07Apr2025 20:04:26.430] [Render thread/INFO] [net.minecraftforge.gametest.ForgeGameTestHooks/]: Enabled Gametest Namespaces: [beeserverutilities]
-[07Apr2025 20:04:26.588] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: Default, Mod Resources
-[07Apr2025 20:04:27.218] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
-[07Apr2025 20:04:27.751] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: UP_TO_DATE Current: 43.5.0 Target: null
-[07Apr2025 20:04:38.319] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:item.goat_horn.play
-[07Apr2025 20:04:38.320] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
-[07Apr2025 20:04:38.352] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on Speakers (THX Spatial)
-[07Apr2025 20:04:38.353] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
-[07Apr2025 20:04:38.461] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas
-[07Apr2025 20:04:38.466] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x128x4 minecraft:textures/atlas/signs.png-atlas
-[07Apr2025 20:04:38.466] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
-[07Apr2025 20:04:38.466] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
-[07Apr2025 20:04:38.466] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
-[07Apr2025 20:04:38.467] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
-[07Apr2025 20:04:38.467] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
-[07Apr2025 20:04:39.655] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
-[07Apr2025 20:04:39.953] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
-[07Apr2025 20:04:39.954] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
-[07Apr2025 20:04:39.955] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas
-[07Apr2025 20:04:40.149] [Realms Notification Availability checker #1/INFO] [com.mojang.realmsclient.client.RealmsClient/]: Could not authorize you against Realms server: Invalid session id
-[07Apr2025 20:04:46.489] [Render thread/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 7 recipes
-[07Apr2025 20:04:47.596] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 1179 advancements
-[07Apr2025 20:04:47.915] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Starting integrated minecraft server version 1.19.2
-[07Apr2025 20:04:47.915] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
-[07Apr2025 20:04:48.346] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
-[07Apr2025 20:04:51.144] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[07Apr2025 20:04:51.144] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[07Apr2025 20:04:51.144] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[07Apr2025 20:04:51.145] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[07Apr2025 20:04:51.145] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[07Apr2025 20:04:51.145] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[07Apr2025 20:04:51.403] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 6%
-[07Apr2025 20:04:51.898] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 98%
-[07Apr2025 20:04:51.898] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 3522 ms
-[07Apr2025 20:04:51.899] [Server thread/INFO] [net.minecraftforge.server.permission.PermissionAPI/]: Successfully initialized permission handler forge:default_handler
-[07Apr2025 20:04:52.090] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing view distance to 9, from 10
-[07Apr2025 20:04:52.093] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing simulation distance to 8, from 0
-[07Apr2025 20:04:52.377] [Render thread/WARN] [io.netty.util.internal.SystemPropertyUtil/]: Unable to parse the boolean system property 'java.net.preferIPv6Addresses':system - using the default value: false
-[07Apr2025 20:04:53.497] [Netty Local Client IO #0/INFO] [net.minecraftforge.network.NetworkHooks/]: Connected to a modded server.
-[07Apr2025 20:04:53.614] [Server thread/INFO] [net.minecraftforge.common.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.server.PlayerAdvancements@5c5a05cb
-[07Apr2025 20:04:53.637] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[local:E:94e26066] logged in with entity id 191 at (44.52260715713744, 137.0, -43.60478272553817)
-[07Apr2025 20:04:53.766] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
-[07Apr2025 20:04:54.666] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 46 advancements
-[07Apr2025 20:05:17.400] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
-[07Apr2025 20:05:17.411] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[1.19.2]'/minecraft:overworld
-[07Apr2025 20:05:17.425] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[1.19.2]'/minecraft:the_nether
-[07Apr2025 20:05:17.427] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[1.19.2]'/minecraft:the_end
-[07Apr2025 20:05:26.751] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
-[07Apr2025 20:05:26.755] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[1.19.2]'/minecraft:overworld
-[07Apr2025 20:05:26.761] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[1.19.2]'/minecraft:the_nether
-[07Apr2025 20:05:26.762] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[1.19.2]'/minecraft:the_end
-[07Apr2025 20:06:32.358] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev has made the advancement [Monster Hunter]
-[07Apr2025 20:06:32.365] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dev has made the advancement [Monster Hunter]
-[07Apr2025 20:06:32.370] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 72 advancements
-[07Apr2025 20:06:51.212] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Summoned new Wither]
-[07Apr2025 20:06:51.215] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Summoned new Wither
-[07Apr2025 20:06:56.208] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Survival Mode]
-[07Apr2025 20:06:56.209] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Set own game mode to Survival Mode
-[07Apr2025 20:07:02.236] [Server thread/INFO] [net.beeboyd.beeserverutilities.BeeServerUtilites/]: Dev died at (44.0, 111.0, -34.3) by fall. Items: None
-[07Apr2025 20:07:02.237] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev was doomed to fall by Wither
-[07Apr2025 20:07:02.239] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dev died at (44.0, 111.0, -34.3) by fall. Items: None
-[07Apr2025 20:07:02.240] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dev was doomed to fall by Wither
-[07Apr2025 20:07:46.105] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 72 advancements
-[07Apr2025 20:07:49.286] [Server thread/INFO] [net.beeboyd.beeserverutilities.BeeServerUtilites/]: Dev died at (39.9, 106.0, 39.1) by fall. Items: None
-[07Apr2025 20:07:49.287] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev fell from a high place
-[07Apr2025 20:07:49.292] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dev died at (39.9, 106.0, 39.1) by fall. Items: None
-[07Apr2025 20:07:49.293] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dev fell from a high place
-[07Apr2025 20:08:04.059] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 72 advancements
-[07Apr2025 20:08:17.861] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Creative Mode]
-[07Apr2025 20:08:17.861] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Set own game mode to Creative Mode
-[07Apr2025 20:08:18.351] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
-[07Apr2025 20:08:18.355] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[1.19.2]'/minecraft:overworld
-[07Apr2025 20:08:18.362] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[1.19.2]'/minecraft:the_nether
-[07Apr2025 20:08:18.363] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[1.19.2]'/minecraft:the_end
-[07Apr2025 20:08:31.060] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set the weather to clear]
-[07Apr2025 20:08:31.061] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Set the weather to clear
-[07Apr2025 20:08:33.980] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set the time to 0]
-[07Apr2025 20:08:33.982] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Set the time to 0
-[07Apr2025 20:08:43.097] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Killed Wither]
-[07Apr2025 20:08:43.097] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Killed Wither
-[07Apr2025 20:08:48.750] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
-[07Apr2025 20:08:48.753] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[1.19.2]'/minecraft:overworld
-[07Apr2025 20:08:48.757] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[1.19.2]'/minecraft:the_nether
-[07Apr2025 20:08:48.757] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[1.19.2]'/minecraft:the_end
-[07Apr2025 20:08:53.659] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 73 advancements
-[07Apr2025 20:09:04.195] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Survival Mode]
-[07Apr2025 20:09:04.200] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Set own game mode to Survival Mode
-[07Apr2025 20:09:07.385] [Server thread/INFO] [net.beeboyd.beeserverutilities.BeeServerUtilites/]: Dev died at (80.1, 70.0, 102.3) by fall. Items: Nether Star
-[07Apr2025 20:09:07.385] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev fell from a high place
-[07Apr2025 20:09:07.389] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dev died at (80.1, 70.0, 102.3) by fall. Items: Nether Star
-[07Apr2025 20:09:07.391] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dev fell from a high place
-[07Apr2025 20:09:25.554] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 73 advancements
-[07Apr2025 20:09:41.318] [Server thread/INFO] [net.beeboyd.beeserverutilities.BeeServerUtilites/]: Dev died at (-4.0, 116.0, -15.4) by outOfWorld. Items: None
-[07Apr2025 20:09:41.318] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev fell out of the world
-[07Apr2025 20:09:41.318] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Killed Dev]
-[07Apr2025 20:09:41.319] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dev died at (-4.0, 116.0, -15.4) by outOfWorld. Items: None
-[07Apr2025 20:09:41.320] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dev fell out of the world
-[07Apr2025 20:09:41.321] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Killed Dev
-[07Apr2025 20:09:56.411] [Server thread/INFO] [net.beeboyd.beeserverutilities.BeeServerUtilites/]: Dev died at (-2.5, 127.0, 9.5) by outOfWorld. Items: None
-[07Apr2025 20:09:56.411] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev fell out of the world
-[07Apr2025 20:09:56.411] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Killed Dev]
-[07Apr2025 20:09:56.412] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dev died at (-2.5, 127.0, 9.5) by outOfWorld. Items: None
-[07Apr2025 20:09:56.412] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dev fell out of the world
-[07Apr2025 20:09:56.412] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Killed Dev
-[07Apr2025 20:10:11.480] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Teleported Dev to 8.291922, 226.000000, 7.743058]
-[07Apr2025 20:10:11.482] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Teleported Dev to 8.291922, 226.000000, 7.743058
-[07Apr2025 20:10:14.440] [Server thread/INFO] [net.beeboyd.beeserverutilities.BeeServerUtilites/]: Dev died at (8.3, 126.0, 7.7) by fall. Items: None
-[07Apr2025 20:10:14.440] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev fell from a high place
-[07Apr2025 20:10:14.444] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dev died at (8.3, 126.0, 7.7) by fall. Items: None
-[07Apr2025 20:10:14.445] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dev fell from a high place
-[07Apr2025 20:10:21.129] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Invalid position for teleport
-[07Apr2025 20:10:24.294] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Teleported Dev to 9.500000, 10000127.000000, 2.500000]
-[07Apr2025 20:10:24.296] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Teleported Dev to 9.500000, 10000127.000000, 2.500000
-[07Apr2025 20:10:33.250] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
-[07Apr2025 20:10:33.254] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[1.19.2]'/minecraft:overworld
-[07Apr2025 20:10:33.258] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[1.19.2]'/minecraft:the_nether
-[07Apr2025 20:10:33.259] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[1.19.2]'/minecraft:the_end
-[07Apr2025 20:11:09.020] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Teleported Dev to 9.500000, 10097073.317205, 2.500000]
-[07Apr2025 20:11:09.021] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Teleported Dev to 9.500000, 10097073.317205, 2.500000
-[07Apr2025 20:11:14.529] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Teleported Dev to 9.500000, 10106642.116795, 2.500000]
-[07Apr2025 20:11:14.531] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Teleported Dev to 9.500000, 10106642.116795, 2.500000
-[07Apr2025 20:11:21.124] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Teleported Dev to 9.500000, 10000.000000, 2.500000]
-[07Apr2025 20:11:21.126] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Teleported Dev to 9.500000, 10000.000000, 2.500000
-[07Apr2025 20:11:42.407] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Teleported Dev to 9.500000, 1000.000000, 2.500000]
-[07Apr2025 20:11:42.407] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Teleported Dev to 9.500000, 1000.000000, 2.500000
-[07Apr2025 20:11:56.039] [Server thread/INFO] [net.beeboyd.beeserverutilities.BeeServerUtilites/]: Dev died at (9.5, 127.0, 2.5) by fall. Items: None
-[07Apr2025 20:11:56.039] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev fell from a high place
-[07Apr2025 20:11:56.043] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dev died at (9.5, 127.0, 2.5) by fall. Items: None
-[07Apr2025 20:11:56.045] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dev fell from a high place
-[07Apr2025 20:12:12.755] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Applied effect Poison to Dev]
-[07Apr2025 20:12:12.756] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Applied effect Poison to Dev
-[07Apr2025 20:12:14.851] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
-[07Apr2025 20:12:14.857] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[1.19.2]'/minecraft:overworld
-[07Apr2025 20:12:14.863] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[1.19.2]'/minecraft:the_nether
-[07Apr2025 20:12:14.863] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[1.19.2]'/minecraft:the_end
-[07Apr2025 20:12:45.977] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Applied effect Instant Damage to Dev]
-[07Apr2025 20:12:45.978] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Applied effect Instant Damage to Dev
-[07Apr2025 20:12:46.004] [Server thread/INFO] [net.beeboyd.beeserverutilities.BeeServerUtilites/]: Dev died at (4.5, 126.0, 9.5) by magic. Items: None
-[07Apr2025 20:12:46.004] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev was killed by magic
-[07Apr2025 20:12:46.005] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dev died at (4.5, 126.0, 9.5) by magic. Items: None
-[07Apr2025 20:12:46.007] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dev was killed by magic
-[07Apr2025 20:12:50.944] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Applied effect Instant Damage to Dev]
-[07Apr2025 20:12:50.945] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Applied effect Instant Damage to Dev
-[07Apr2025 20:12:53.329] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Applied effect Instant Damage to Dev]
-[07Apr2025 20:12:53.331] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Applied effect Instant Damage to Dev
-[07Apr2025 20:12:54.647] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Applied effect Instant Damage to Dev]
-[07Apr2025 20:12:54.648] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Applied effect Instant Damage to Dev
-[07Apr2025 20:12:55.742] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Applied effect Instant Damage to Dev]
-[07Apr2025 20:12:55.743] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Applied effect Instant Damage to Dev
-[07Apr2025 20:12:56.592] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Applied effect Instant Damage to Dev]
-[07Apr2025 20:12:56.594] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Applied effect Instant Damage to Dev
-[07Apr2025 20:12:56.605] [Server thread/INFO] [net.beeboyd.beeserverutilities.BeeServerUtilites/]: Dev died at (6.5, 127.0, 5.5) by magic. Items: None
-[07Apr2025 20:12:56.605] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev was killed by magic
-[07Apr2025 20:12:56.607] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dev died at (6.5, 127.0, 5.5) by magic. Items: None
-[07Apr2025 20:12:56.608] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dev was killed by magic
-[07Apr2025 20:13:03.882] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Applied effect Instant Damage to Dev]
-[07Apr2025 20:13:03.884] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Applied effect Instant Damage to Dev
-[07Apr2025 20:13:03.902] [Server thread/INFO] [net.beeboyd.beeserverutilities.BeeServerUtilites/]: Dev died at (-1.5, 126.0, 0.5) by magic. Items: None
-[07Apr2025 20:13:03.904] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev was killed by magic
-[07Apr2025 20:13:03.905] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dev died at (-1.5, 126.0, 0.5) by magic. Items: None
-[07Apr2025 20:13:03.906] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dev was killed by magic
-[07Apr2025 20:13:12.264] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Applied effect Instant Damage to Dev]
-[07Apr2025 20:13:12.266] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Applied effect Instant Damage to Dev
-[07Apr2025 20:13:17.960] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Applied effect Instant Damage to Dev]
-[07Apr2025 20:13:17.961] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Applied effect Instant Damage to Dev
-[07Apr2025 20:13:21.429] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Applied effect Instant Damage to Dev]
-[07Apr2025 20:13:21.430] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Applied effect Instant Damage to Dev
-[07Apr2025 20:13:23.464] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Applied effect Instant Damage to Dev]
-[07Apr2025 20:13:23.466] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Applied effect Instant Damage to Dev
-[07Apr2025 20:13:25.519] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Applied effect Instant Damage to Dev]
-[07Apr2025 20:13:25.521] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Applied effect Instant Damage to Dev
-[07Apr2025 20:13:27.050] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
-[07Apr2025 20:13:27.054] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[1.19.2]'/minecraft:overworld
-[07Apr2025 20:13:27.058] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[1.19.2]'/minecraft:the_nether
-[07Apr2025 20:13:27.059] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[1.19.2]'/minecraft:the_end
-[07Apr2025 20:13:38.280] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Applied effect Instant Damage to Dev]
-[07Apr2025 20:13:38.281] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Applied effect Instant Damage to Dev
-[07Apr2025 20:13:41.285] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Applied effect Instant Damage to Dev]
-[07Apr2025 20:13:41.287] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Applied effect Instant Damage to Dev
-[07Apr2025 20:13:51.987] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Applied effect Instant Damage to Dev]
-[07Apr2025 20:13:51.988] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Applied effect Instant Damage to Dev
-[07Apr2025 20:13:53.102] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
-[07Apr2025 20:13:53.105] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[1.19.2]'/minecraft:overworld
-[07Apr2025 20:13:53.108] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[1.19.2]'/minecraft:the_nether
-[07Apr2025 20:13:53.108] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[1.19.2]'/minecraft:the_end
-[07Apr2025 20:13:59.704] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Applied effect Instant Damage to Dev]
-[07Apr2025 20:13:59.706] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Applied effect Instant Damage to Dev
-[07Apr2025 20:13:59.755] [Server thread/INFO] [net.beeboyd.beeserverutilities.BeeServerUtilites/]: Dev died at (10.5, 125.0, 8.5) by magic. Items: None
-[07Apr2025 20:13:59.755] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev was killed by magic
-[07Apr2025 20:13:59.755] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dev died at (10.5, 125.0, 8.5) by magic. Items: None
-[07Apr2025 20:13:59.757] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dev was killed by magic
-[07Apr2025 20:14:04.270] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Applied effect Instant Damage to Dev]
-[07Apr2025 20:14:04.271] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Applied effect Instant Damage to Dev
-[07Apr2025 20:14:04.305] [Server thread/INFO] [net.beeboyd.beeserverutilities.BeeServerUtilites/]: Dev died at (-9.5, 119.0, -9.5) by magic. Items: None
-[07Apr2025 20:14:04.305] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev was killed by magic
-[07Apr2025 20:14:04.306] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dev died at (-9.5, 119.0, -9.5) by magic. Items: None
-[07Apr2025 20:14:04.306] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dev was killed by magic
-[07Apr2025 20:14:08.396] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Applied effect Instant Damage to Dev]
-[07Apr2025 20:14:08.398] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Applied effect Instant Damage to Dev
-[07Apr2025 20:14:10.112] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Applied effect Instant Damage to Dev]
-[07Apr2025 20:14:10.112] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Applied effect Instant Damage to Dev
-[07Apr2025 20:14:10.154] [Server thread/INFO] [net.beeboyd.beeserverutilities.BeeServerUtilites/]: Dev died at (5.5, 128.0, -2.5) by magic. Items: None
-[07Apr2025 20:14:10.154] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev was killed by magic
-[07Apr2025 20:14:10.154] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dev died at (5.5, 128.0, -2.5) by magic. Items: None
-[07Apr2025 20:14:10.156] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dev was killed by magic
-[07Apr2025 20:14:15.540] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Applied effect Instant Damage to Dev]
-[07Apr2025 20:14:15.541] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Applied effect Instant Damage to Dev
-[07Apr2025 20:14:15.554] [Server thread/INFO] [net.beeboyd.beeserverutilities.BeeServerUtilites/]: Dev died at (-8.5, 128.0, 1.5) by magic. Items: None
-[07Apr2025 20:14:15.554] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev was killed by magic
-[07Apr2025 20:14:15.556] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dev died at (-8.5, 128.0, 1.5) by magic. Items: None
-[07Apr2025 20:14:15.557] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dev was killed by magic
-[07Apr2025 20:14:20.187] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Applied effect Instant Damage to Dev]
-[07Apr2025 20:14:20.189] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Applied effect Instant Damage to Dev
-[07Apr2025 20:14:20.203] [Server thread/INFO] [net.beeboyd.beeserverutilities.BeeServerUtilites/]: Dev died at (10.5, 126.0, 4.5) by magic. Items: None
-[07Apr2025 20:14:20.204] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev was killed by magic
-[07Apr2025 20:14:20.204] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dev died at (10.5, 126.0, 4.5) by magic. Items: None
-[07Apr2025 20:14:20.206] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dev was killed by magic
-[07Apr2025 20:14:24.660] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Applied effect Instant Damage to Dev]
-[07Apr2025 20:14:24.661] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Applied effect Instant Damage to Dev
-[07Apr2025 20:14:24.707] [Server thread/INFO] [net.beeboyd.beeserverutilities.BeeServerUtilites/]: Dev died at (-9.5, 137.0, 6.5) by magic. Items: None
-[07Apr2025 20:14:24.707] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev was killed by magic
-[07Apr2025 20:14:24.707] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dev died at (-9.5, 137.0, 6.5) by magic. Items: None
-[07Apr2025 20:14:24.709] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dev was killed by magic
-[07Apr2025 20:14:30.819] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Applied effect Instant Damage to Dev]
-[07Apr2025 20:14:30.822] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Applied effect Instant Damage to Dev
-[07Apr2025 20:14:30.855] [Server thread/INFO] [net.beeboyd.beeserverutilities.BeeServerUtilites/]: Dev died at (-7.5, 125.0, 0.5) by magic. Items: None
-[07Apr2025 20:14:30.855] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev was killed by magic
-[07Apr2025 20:14:30.856] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dev died at (-7.5, 125.0, 0.5) by magic. Items: None
-[07Apr2025 20:14:30.857] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dev was killed by magic
-[07Apr2025 20:14:35.947] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Applied effect Instant Damage to Dev]
-[07Apr2025 20:14:35.949] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Applied effect Instant Damage to Dev
-[07Apr2025 20:14:37.788] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Applied effect Instant Damage to Dev]
-[07Apr2025 20:14:37.788] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Applied effect Instant Damage to Dev
-[07Apr2025 20:14:37.802] [Server thread/INFO] [net.beeboyd.beeserverutilities.BeeServerUtilites/]: Dev died at (-5.5, 128.0, 4.5) by magic. Items: None
-[07Apr2025 20:14:37.802] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev was killed by magic
-[07Apr2025 20:14:37.807] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dev died at (-5.5, 128.0, 4.5) by magic. Items: None
-[07Apr2025 20:14:37.808] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dev was killed by magic
-[07Apr2025 20:14:41.532] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Applied effect Instant Damage to Dev]
-[07Apr2025 20:14:41.534] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Applied effect Instant Damage to Dev
-[07Apr2025 20:14:43.440] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Applied effect Instant Damage to Dev]
-[07Apr2025 20:14:43.441] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Applied effect Instant Damage to Dev
-[07Apr2025 20:14:43.455] [Server thread/INFO] [net.beeboyd.beeserverutilities.BeeServerUtilites/]: Dev died at (5.5, 128.0, -3.5) by magic. Items: None
-[07Apr2025 20:14:43.456] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev was killed by magic
-[07Apr2025 20:14:43.456] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dev died at (5.5, 128.0, -3.5) by magic. Items: None
-[07Apr2025 20:14:43.458] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dev was killed by magic
-[07Apr2025 20:14:50.880] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Applied effect Instant Damage to Dev]
-[07Apr2025 20:14:50.880] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Applied effect Instant Damage to Dev
-[07Apr2025 20:14:50.904] [Server thread/INFO] [net.beeboyd.beeserverutilities.BeeServerUtilites/]: Dev died at (-3.5, 120.0, -8.5) by magic. Items: None
-[07Apr2025 20:14:50.904] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev was killed by magic
-[07Apr2025 20:14:50.906] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dev died at (-3.5, 120.0, -8.5) by magic. Items: None
-[07Apr2025 20:14:50.907] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dev was killed by magic
-[07Apr2025 20:14:55.127] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Applied effect Instant Damage to Dev]
-[07Apr2025 20:14:55.128] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Applied effect Instant Damage to Dev
-[07Apr2025 20:14:56.539] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Applied effect Instant Damage to Dev]
-[07Apr2025 20:14:56.539] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Applied effect Instant Damage to Dev
-[07Apr2025 20:14:56.557] [Server thread/INFO] [net.beeboyd.beeserverutilities.BeeServerUtilites/]: Dev died at (5.5, 127.0, 3.5) by magic. Items: None
-[07Apr2025 20:14:56.557] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev was killed by magic
-[07Apr2025 20:14:56.560] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dev died at (5.5, 127.0, 3.5) by magic. Items: None
-[07Apr2025 20:14:56.561] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dev was killed by magic
-[07Apr2025 20:15:02.336] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Applied effect Instant Damage to Dev]
-[07Apr2025 20:15:02.338] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Applied effect Instant Damage to Dev
-[07Apr2025 20:15:07.999] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Applied effect Instant Damage to Dev]
-[07Apr2025 20:15:08.001] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Applied effect Instant Damage to Dev
-[07Apr2025 20:15:10.585] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Applied effect Instant Damage to Dev]
-[07Apr2025 20:15:10.586] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Applied effect Instant Damage to Dev
-[07Apr2025 20:15:13.533] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Applied effect Instant Damage to Dev]
-[07Apr2025 20:15:13.534] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Applied effect Instant Damage to Dev
-[07Apr2025 20:15:15.331] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Applied effect Instant Damage to Dev]
-[07Apr2025 20:15:15.332] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Applied effect Instant Damage to Dev
-[07Apr2025 20:15:44.374] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!
-[07Apr2025 20:15:44.404] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: Disconnected
-[07Apr2025 20:15:44.404] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
-[07Apr2025 20:15:44.409] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Stopping singleplayer server as player logged out
-[07Apr2025 20:15:44.450] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
-[07Apr2025 20:15:44.450] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
-[07Apr2025 20:15:44.450] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
-[07Apr2025 20:15:45.364] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[1.19.2]'/minecraft:overworld
-[07Apr2025 20:15:45.411] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[1.19.2]'/minecraft:the_nether
-[07Apr2025 20:15:45.412] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[1.19.2]'/minecraft:the_end
-[07Apr2025 20:15:45.422] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (1_19_2): All chunks are saved
-[07Apr2025 20:15:45.422] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[07Apr2025 20:15:45.422] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[07Apr2025 20:15:45.423] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
+[10Apr2025 19:35:23.232] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeclientuserdev, --version, MOD_DEV, --assetIndex, 1.19, --assetsDir, C:\Users\dan-c\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 43.5.0, --fml.mcVersion, 1.19.2, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20220805.130853]
+[10Apr2025 19:35:23.242] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.13 by Eclipse Adoptium; OS Windows 10 arch amd64 version 10.0
+[10Apr2025 19:35:23.448] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/dan-c/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23127!/ Service=ModLauncher Env=CLIENT
+[10Apr2025 19:35:23.881] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\dan-c\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.19.2-43.5.0\127dd8c16243efb106d9c85717ca61eb55fbbfa3\javafmllanguage-1.19.2-43.5.0.jar is missing mods.toml file
+[10Apr2025 19:35:23.890] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\dan-c\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.19.2-43.5.0\161b579c6f52a4441b04376763e7aedaf1a097f1\lowcodelanguage-1.19.2-43.5.0.jar is missing mods.toml file
+[10Apr2025 19:35:23.897] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\dan-c\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.19.2-43.5.0\6ca236cd5718398c2ba7abef7cc7f1f6e21dbc38\mclanguage-1.19.2-43.5.0.jar is missing mods.toml file
+[10Apr2025 19:35:23.905] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\dan-c\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.19.2-43.5.0\222e1c483f50a0b8b1397e833049b51445cc7dfb\fmlcore-1.19.2-43.5.0.jar is missing mods.toml file
+[10Apr2025 19:35:24.005] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
+[10Apr2025 19:35:25.567] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeclientuserdev' with arguments [--version, MOD_DEV, --gameDir, ., --assetsDir, C:\Users\dan-c\.gradle\caches\forge_gradle\assets, --assetIndex, 1.19]
+[10Apr2025 19:35:30.367] [pool-3-thread-1/INFO] [net.minecraft.util.datafix.DataFixers/]: Building unoptimized datafixer
+[10Apr2025 19:35:32.390] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResources/]: Assets URL 'union:/C:/Users/dan-c/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.19.2-43.5.0_mapped_parchment_2022.08.14-1.19.2/forge-1.19.2-43.5.0_mapped_parchment_2022.08.14-1.19.2-recomp.jar%23189!/assets/.mcassetsroot' uses unexpected schema
+[10Apr2025 19:35:32.391] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResources/]: Assets URL 'union:/C:/Users/dan-c/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.19.2-43.5.0_mapped_parchment_2022.08.14-1.19.2/forge-1.19.2-43.5.0_mapped_parchment_2022.08.14-1.19.2-recomp.jar%23189!/data/.mcassetsroot' uses unexpected schema
+[10Apr2025 19:35:32.425] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[10Apr2025 19:35:32.438] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
+[10Apr2025 19:35:32.729] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.3.1 build 7
+[10Apr2025 19:35:33.731] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 43.5.0, for MC 1.19.2 with MCP 20220805.130853
+[10Apr2025 19:35:33.731] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v43.5.0 Initialized
+[10Apr2025 19:35:34.930] [Render thread/INFO] [net.minecraftforge.gametest.ForgeGameTestHooks/]: Enabled Gametest Namespaces: [beeserverutilities]
+[10Apr2025 19:35:35.176] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: Default, Mod Resources
+[10Apr2025 19:35:35.312] [Worker-Main-6/INFO] [net.beeboyd.beeserverutilities.BeeServerUtilities/]: ServerLoggerConfig reloaded.
+[10Apr2025 19:35:35.912] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
+[10Apr2025 19:35:36.487] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: UP_TO_DATE Current: 43.5.0 Target: null
+[10Apr2025 19:35:48.328] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:item.goat_horn.play
+[10Apr2025 19:35:48.329] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[10Apr2025 19:35:48.375] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on Speakers (THX Spatial)
+[10Apr2025 19:35:48.377] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
+[10Apr2025 19:35:48.527] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas
+[10Apr2025 19:35:48.535] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x128x4 minecraft:textures/atlas/signs.png-atlas
+[10Apr2025 19:35:48.536] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[10Apr2025 19:35:48.536] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[10Apr2025 19:35:48.537] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[10Apr2025 19:35:48.538] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[10Apr2025 19:35:48.538] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[10Apr2025 19:35:49.749] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
+[10Apr2025 19:35:50.073] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
+[10Apr2025 19:35:50.075] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
+[10Apr2025 19:35:50.075] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[10Apr2025 19:35:50.532] [Realms Notification Availability checker #1/INFO] [com.mojang.realmsclient.client.RealmsClient/]: Could not authorize you against Realms server: Invalid session id
+[10Apr2025 19:35:57.664] [Render thread/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 7 recipes
+[10Apr2025 19:35:58.863] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 1179 advancements
+[10Apr2025 19:35:59.244] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Starting integrated minecraft server version 1.19.2
+[10Apr2025 19:35:59.245] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[10Apr2025 19:35:59.699] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[10Apr2025 19:36:03.062] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[10Apr2025 19:36:03.062] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[10Apr2025 19:36:03.062] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[10Apr2025 19:36:03.062] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[10Apr2025 19:36:03.062] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[10Apr2025 19:36:03.064] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[10Apr2025 19:36:03.064] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[10Apr2025 19:36:03.259] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[10Apr2025 19:36:03.756] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 53%
+[10Apr2025 19:36:04.077] [Server thread/INFO] [net.minecraftforge.server.permission.PermissionAPI/]: Successfully initialized permission handler forge:default_handler
+[10Apr2025 19:36:04.097] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 4367 ms
+[10Apr2025 19:36:04.270] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing view distance to 21, from 10
+[10Apr2025 19:36:04.270] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing simulation distance to 14, from 0
+[10Apr2025 19:36:04.579] [Render thread/WARN] [io.netty.util.internal.SystemPropertyUtil/]: Unable to parse the boolean system property 'java.net.preferIPv6Addresses':system - using the default value: false
+[10Apr2025 19:36:05.596] [Netty Local Client IO #0/INFO] [net.minecraftforge.network.NetworkHooks/]: Connected to a modded server.
+[10Apr2025 19:36:05.721] [Server thread/INFO] [net.minecraftforge.common.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.server.PlayerAdvancements@186b2f50
+[10Apr2025 19:36:05.749] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[local:E:c9ea4d9b] logged in with entity id 1662 at (-2.0655095217803305, 110.0, 9.566661430550852)
+[10Apr2025 19:36:05.889] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
+[10Apr2025 19:36:06.830] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 121 advancements
+[10Apr2025 19:36:21.365] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Insufficient funds!
+[10Apr2025 19:36:31.400] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Set Dev's balance to RC$500
+[10Apr2025 19:36:33.357] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Insufficient funds!
+[10Apr2025 19:36:45.040] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Survival Mode]
+[10Apr2025 19:36:45.040] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Set own game mode to Survival Mode
+[10Apr2025 19:36:53.994] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Spectator Mode]
+[10Apr2025 19:36:53.995] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Set own game mode to Spectator Mode
+[10Apr2025 19:36:55.729] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[10Apr2025 19:36:55.739] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[1.19.2]'/minecraft:overworld
+[10Apr2025 19:36:55.762] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[1.19.2]'/minecraft:the_nether
+[10Apr2025 19:36:55.762] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[1.19.2]'/minecraft:the_end
+[10Apr2025 19:37:00.197] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Saved screenshot as 2025-04-10_19.37.00.png
+[10Apr2025 19:37:01.892] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Survival Mode]
+[10Apr2025 19:37:01.892] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Set own game mode to Survival Mode
+[10Apr2025 19:37:03.419] [Server thread/INFO] [net.beeboyd.beeserverutilities.BeeServerUtilities/]: Dev died at (19.6, 85.0, 51.0) by fall. Items: Cobblestone, Dirt
+[10Apr2025 19:37:03.419] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev fell from a high place
+[10Apr2025 19:37:03.425] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dev died at (19.6, 85.0, 51.0) by fall. Items: Cobblestone, Dirt
+[10Apr2025 19:37:03.428] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dev fell from a high place
+[10Apr2025 19:37:41.029] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[10Apr2025 19:37:41.034] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[1.19.2]'/minecraft:overworld
+[10Apr2025 19:37:41.041] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[1.19.2]'/minecraft:the_nether
+[10Apr2025 19:37:41.042] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[1.19.2]'/minecraft:the_end
+[10Apr2025 19:38:18.530] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[10Apr2025 19:38:18.534] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[1.19.2]'/minecraft:overworld
+[10Apr2025 19:38:18.546] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[1.19.2]'/minecraft:the_nether
+[10Apr2025 19:38:18.547] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[1.19.2]'/minecraft:the_end
+[10Apr2025 19:38:35.929] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[10Apr2025 19:38:35.933] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[1.19.2]'/minecraft:overworld
+[10Apr2025 19:38:35.943] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[1.19.2]'/minecraft:the_nether
+[10Apr2025 19:38:35.944] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[1.19.2]'/minecraft:the_end
+[10Apr2025 19:38:38.680] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[10Apr2025 19:38:38.683] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[1.19.2]'/minecraft:overworld
+[10Apr2025 19:38:38.692] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[1.19.2]'/minecraft:the_nether
+[10Apr2025 19:38:38.693] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[1.19.2]'/minecraft:the_end
+[10Apr2025 19:38:39.929] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[10Apr2025 19:38:39.933] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[1.19.2]'/minecraft:overworld
+[10Apr2025 19:38:39.939] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[1.19.2]'/minecraft:the_nether
+[10Apr2025 19:38:39.941] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[1.19.2]'/minecraft:the_end
+[10Apr2025 19:38:41.779] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[10Apr2025 19:38:41.783] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[1.19.2]'/minecraft:overworld
+[10Apr2025 19:38:41.790] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[1.19.2]'/minecraft:the_nether
+[10Apr2025 19:38:41.791] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[1.19.2]'/minecraft:the_end
+[10Apr2025 19:38:56.596] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev has completed the challenge [Serious Dedication]
+[10Apr2025 19:38:56.596] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Gave 1 [Netherite Hoe] to Dev]
+[10Apr2025 19:38:56.596] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dev has completed the challenge [Serious Dedication]
+[10Apr2025 19:38:56.596] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Gave 1 [Netherite Hoe] to Dev
+[10Apr2025 19:38:56.642] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 124 advancements
+[10Apr2025 19:39:00.238] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 127 advancements
+[10Apr2025 19:39:00.848] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 144 advancements
+[10Apr2025 19:39:14.354] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Gave 1 [Netherite Boots] to Dev]
+[10Apr2025 19:39:14.356] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Gave 1 [Netherite Boots] to Dev
+[10Apr2025 19:39:19.927] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Gave 1 [Netherite Helmet] to Dev]
+[10Apr2025 19:39:19.929] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Gave 1 [Netherite Helmet] to Dev
+[10Apr2025 19:39:23.540] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Gave 1 [Netherite Chestplate] to Dev]
+[10Apr2025 19:39:23.541] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Gave 1 [Netherite Chestplate] to Dev
+[10Apr2025 19:39:27.369] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev has completed the challenge [Cover Me in Debris]
+[10Apr2025 19:39:27.369] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Gave 1 [Netherite Leggings] to Dev]
+[10Apr2025 19:39:27.371] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dev has completed the challenge [Cover Me in Debris]
+[10Apr2025 19:39:27.371] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Gave 1 [Netherite Leggings] to Dev
+[10Apr2025 19:39:27.387] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 147 advancements
+[10Apr2025 19:39:56.092] [Server thread/INFO] [net.beeboyd.beeserverutilities.BeeServerUtilities/]: Dev died at (-59.1, 106.0, 17.9) by fall. Items: Cobblestone, Dirt, Netherite Hoe, Flint, Gravel
+[10Apr2025 19:39:56.092] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev fell from a high place
+[10Apr2025 19:39:56.093] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dev died at (-59.1, 106.0, 17.9) by fall. Items: Cobblestone, Dirt, Netherite Hoe, Flint, Gravel
+[10Apr2025 19:39:56.094] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dev fell from a high place
+[10Apr2025 19:40:39.334] [Server thread/INFO] [net.beeboyd.beeserverutilities.BeeServerUtilities/]: Dev died at (18.8, 100.0, 29.6) by mob. Items: Cobblestone
+[10Apr2025 19:40:39.334] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev was slain by Spider
+[10Apr2025 19:40:39.337] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dev died at (18.8, 100.0, 29.6) by mob. Items: Cobblestone
+[10Apr2025 19:40:39.338] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dev was slain by Spider
+[10Apr2025 19:41:36.385] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[10Apr2025 19:41:36.391] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[1.19.2]'/minecraft:overworld
+[10Apr2025 19:41:36.401] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[1.19.2]'/minecraft:the_nether
+[10Apr2025 19:41:36.402] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[1.19.2]'/minecraft:the_end
+[10Apr2025 19:41:42.688] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Creative Mode]
+[10Apr2025 19:41:42.688] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Set own game mode to Creative Mode
+[10Apr2025 19:41:45.424] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Survival Mode]
+[10Apr2025 19:41:45.427] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Set own game mode to Survival Mode
+[10Apr2025 19:41:50.791] [Server thread/INFO] [net.beeboyd.beeserverutilities.BeeServerUtilities/]: Dev died at (105.6, 37.0, -12.6) by fall. Items: None
+[10Apr2025 19:41:50.791] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev was doomed to fall by Enderman
+[10Apr2025 19:41:50.793] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dev died at (105.6, 37.0, -12.6) by fall. Items: None
+[10Apr2025 19:41:50.794] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dev was doomed to fall by Enderman
+[10Apr2025 19:41:52.099] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[10Apr2025 19:41:52.103] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[1.19.2]'/minecraft:overworld
+[10Apr2025 19:41:52.107] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[1.19.2]'/minecraft:the_nether
+[10Apr2025 19:41:52.109] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[1.19.2]'/minecraft:the_end
+[10Apr2025 19:41:56.644] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Spectator Mode]
+[10Apr2025 19:41:56.645] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Set own game mode to Spectator Mode
+[10Apr2025 19:42:05.299] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Survival Mode]
+[10Apr2025 19:42:05.303] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Set own game mode to Survival Mode
+[10Apr2025 19:42:06.581] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[10Apr2025 19:42:06.586] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[1.19.2]'/minecraft:overworld
+[10Apr2025 19:42:06.595] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[1.19.2]'/minecraft:the_nether
+[10Apr2025 19:42:06.595] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[1.19.2]'/minecraft:the_end
+[10Apr2025 19:42:10.709] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Creative Mode]
+[10Apr2025 19:42:10.710] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Set own game mode to Creative Mode
+[10Apr2025 19:42:13.622] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Survival Mode]
+[10Apr2025 19:42:13.624] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Set own game mode to Survival Mode
+[10Apr2025 19:42:28.484] [Server thread/INFO] [net.beeboyd.beeserverutilities.BeeServerUtilities/]: Dev died at (109.9, -94.2, -25.1) by outOfWorld. Items: None
+[10Apr2025 19:42:28.484] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev didn't want to live in the same world as Enderman
+[10Apr2025 19:42:28.484] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dev died at (109.9, -94.2, -25.1) by outOfWorld. Items: None
+[10Apr2025 19:42:28.486] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dev didn't want to live in the same world as Enderman
+[10Apr2025 19:42:41.173] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!
+[10Apr2025 19:42:41.179] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: Disconnected
+[10Apr2025 19:42:41.179] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
+[10Apr2025 19:42:41.184] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Stopping singleplayer server as player logged out
+[10Apr2025 19:42:41.230] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[10Apr2025 19:42:41.230] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[10Apr2025 19:42:41.230] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[10Apr2025 19:42:42.584] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[1.19.2]'/minecraft:overworld
+[10Apr2025 19:42:42.634] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[1.19.2]'/minecraft:the_nether
+[10Apr2025 19:42:42.636] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[1.19.2]'/minecraft:the_end
+[10Apr2025 19:42:42.655] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (1_19_2): All chunks are saved
+[10Apr2025 19:42:42.655] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[10Apr2025 19:42:42.655] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[10Apr2025 19:42:42.655] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved

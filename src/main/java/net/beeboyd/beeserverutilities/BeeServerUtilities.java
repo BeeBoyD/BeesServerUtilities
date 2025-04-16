@@ -4,6 +4,7 @@ import com.mojang.logging.LogUtils;
 import net.beeboyd.beeserverutilities.autoexec.AutoExecCommand;
 import net.beeboyd.beeserverutilities.autoexec.AutoExecManager;
 import net.beeboyd.beeserverutilities.deathmessage.DeathMessageCommand;
+import net.beeboyd.beeserverutilities.nametag.NametagCommand;
 import net.beeboyd.beeserverutilities.serverlogger.ServerLogger;
 import net.beeboyd.beeserverutilities.serverlogger.ServerLoggerBlockCommand;
 import net.beeboyd.beeserverutilities.serverlogger.ServerLoggerConfig;
@@ -17,24 +18,21 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
-@Mod(BeeServerUtilites.MOD_ID)
-public class BeeServerUtilites {
+@Mod(BeeServerUtilities.MOD_ID)
+public class BeeServerUtilities {
     public static final String MOD_ID = "beeserverutilities";
     public static final Logger LOGGER = LogUtils.getLogger();
 
-    public BeeServerUtilites() {
+    public BeeServerUtilities() {
         // Register the setup method for mod loading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::commonSetup);
         // Register for forge events
         MinecraftForge.EVENT_BUS.register(this);
-        // Load persisted autoexec rules from file
-        AutoExecManager.loadRules();
-        ServerLoggerConfig.reload();
-
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
-        // Common setup code (if needed)
+        AutoExecManager.loadRules();
+        ServerLoggerConfig.reload();
     }
 
     @SubscribeEvent
@@ -45,5 +43,6 @@ public class BeeServerUtilites {
         ServerLogger.register(event.getDispatcher());
         ServerInfoCommand.register(event.getDispatcher());
         ServerLoggerBlockCommand.register(event.getDispatcher());
+        NametagCommand.register(event.getDispatcher());
     }
 }

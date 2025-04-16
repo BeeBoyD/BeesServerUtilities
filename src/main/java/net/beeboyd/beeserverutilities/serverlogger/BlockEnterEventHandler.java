@@ -1,6 +1,6 @@
 package net.beeboyd.beeserverutilities.serverlogger;
 
-import net.beeboyd.beeserverutilities.BeeServerUtilites;
+import net.beeboyd.beeserverutilities.BeeServerUtilities;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraftforge.event.TickEvent;
@@ -11,7 +11,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
 
-@Mod.EventBusSubscriber(modid = BeeServerUtilites.MOD_ID)
+@Mod.EventBusSubscriber(modid = BeeServerUtilities.MOD_ID)
 public class BlockEnterEventHandler {
 
     // Map from player UUID to last detection timestamp (in milliseconds)

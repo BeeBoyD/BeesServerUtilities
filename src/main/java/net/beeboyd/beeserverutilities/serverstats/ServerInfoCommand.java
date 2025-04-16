@@ -3,7 +3,7 @@ package net.beeboyd.beeserverutilities.serverstats;
 import com.mojang.brigadier.Command;
 import com.mojang.brigadier.CommandDispatcher;
 import com.mojang.brigadier.context.CommandContext;
-import net.beeboyd.beeserverutilities.BeeServerUtilites;
+import net.beeboyd.beeserverutilities.BeeServerUtilities;
 import net.minecraft.ChatFormatting;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.Commands;
@@ -48,7 +48,7 @@ public class ServerInfoCommand {
                 osInfo, cpuModel, ramCapacity, ramModel);
 
         source.sendSuccess(Component.literal(info).withStyle(ChatFormatting.GOLD), false);
-        BeeServerUtilites.LOGGER.info("Server Info:\n" + info);
+        BeeServerUtilities.LOGGER.info("Server Info:\n" + info);
 
         return Command.SINGLE_SUCCESS;
     }

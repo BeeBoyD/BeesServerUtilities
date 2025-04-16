@@ -3,10 +3,9 @@ package net.beeboyd.beeserverutilities.autoexec;
 import com.mojang.brigadier.Command;
 import com.mojang.brigadier.CommandDispatcher;
 import com.mojang.brigadier.arguments.StringArgumentType;
-import com.mojang.brigadier.suggestion.SuggestionsBuilder;
 import com.mojang.brigadier.context.CommandContext;
 import com.mojang.brigadier.suggestion.SuggestionProvider;
-import net.beeboyd.beeserverutilities.BeeServerUtilites;
+import net.beeboyd.beeserverutilities.BeeServerUtilities;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.Commands;
 import net.minecraft.network.chat.Component;
@@ -14,7 +13,6 @@ import net.minecraft.network.chat.Component;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
-import java.util.concurrent.CompletableFuture;
 import java.util.stream.Collectors;
 
 public class AutoExecCommand {
@@ -168,7 +166,7 @@ public class AutoExecCommand {
         }
         AutoExecManager.addRule(name, scheduleType, target, command);
         context.getSource().sendSuccess(Component.literal("Added autoexec rule [" + name + "]: " + scheduleType + " " + target + " -> " + command), true);
-        BeeServerUtilites.LOGGER.info("Added autoexec rule [{}]: {} {} -> {}", name, scheduleType, target, command);
+        BeeServerUtilities.LOGGER.info("Added autoexec rule [{}]: {} {} -> {}", name, scheduleType, target, command);
         return Command.SINGLE_SUCCESS;
     }
 
@@ -188,10 +186,10 @@ public class AutoExecCommand {
         boolean removed = AutoExecManager.removeRule(name, scheduleType, target, command);
         if (removed) {
             context.getSource().sendSuccess(Component.literal("Removed autoexec rule [" + name + "]."), true);
-            BeeServerUtilites.LOGGER.info("Removed autoexec rule [{}].", name);
+            BeeServerUtilities.LOGGER.info("Removed autoexec rule [{}].", name);
         } else {
             context.getSource().sendFailure(Component.literal("No matching rule found to remove."));
-            BeeServerUtilites.LOGGER.warn("Failed to remove autoexec rule [{}]: rule not found.", name);
+            BeeServerUtilities.LOGGER.warn("Failed to remove autoexec rule [{}]: rule not found.", name);
         }
         return Command.SINGLE_SUCCESS;
     }
@@ -199,7 +197,7 @@ public class AutoExecCommand {
     private static int executeReload(CommandContext<CommandSourceStack> context) {
         AutoExecManager.loadRules();
         context.getSource().sendSuccess(Component.literal("Reloaded autoexec configuration."), true);
-        BeeServerUtilites.LOGGER.info("Reloaded autoexec configuration.");
+        BeeServerUtilities.LOGGER.info("Reloaded autoexec configuration.");
         return Command.SINGLE_SUCCESS;
     }
 

@@ -3,7 +3,7 @@ package net.beeboyd.beeserverutilities.serverlogger;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonSyntaxException;
-import net.beeboyd.beeserverutilities.BeeServerUtilites;
+import net.beeboyd.beeserverutilities.BeeServerUtilities;
 
 import java.io.File;
 import java.io.FileReader;
@@ -70,9 +70,9 @@ public class ServerLoggerConfig {
         }
         try (FileReader reader = new FileReader(CONFIG_FILE)) {
             instance = GSON.fromJson(reader, ServerLoggerConfig.class);
-            BeeServerUtilites.LOGGER.info("ServerLoggerConfig reloaded.");
+            BeeServerUtilities.LOGGER.info("ServerLoggerConfig reloaded.");
         } catch (IOException | JsonSyntaxException e) {
-            BeeServerUtilites.LOGGER.error("Error reloading ServerLoggerConfig: " + e.getMessage());
+            BeeServerUtilities.LOGGER.error("Error reloading ServerLoggerConfig: " + e.getMessage());
         }
     }
 
@@ -87,9 +87,9 @@ public class ServerLoggerConfig {
             try (FileWriter writer = new FileWriter(CONFIG_FILE)) {
                 GSON.toJson(instance, writer);
             }
-            BeeServerUtilites.LOGGER.info("ServerLoggerConfig saved.");
+            BeeServerUtilities.LOGGER.info("ServerLoggerConfig saved.");
         } catch (IOException e) {
-            BeeServerUtilites.LOGGER.error("Error saving ServerLoggerConfig: " + e.getMessage());
+            BeeServerUtilities.LOGGER.error("Error saving ServerLoggerConfig: " + e.getMessage());
         }
     }
 
